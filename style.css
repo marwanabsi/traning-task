@@ -1,0 +1,57 @@
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-image: url(images/random10.jpg);
+}
+
+.social-media{
+    display: flex;
+    list-style-type: none;
+    padding: 0em;
+}
+
+.social-media li{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0em 0.3em;
+    width: 1.5em;
+    height: 1.5em;
+    background-color: rgb(0, 136, 255);
+    border-radius: 1em;
+}
+
+.social-media li img{
+    width: 0.8em;
+    height: 0.8em;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+}
+
+nav .menue{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    padding: 0em;
+    width: 60%;
+}
+
+nav .logo-name{
+    display: flex;
+}
+
+nav .logo-name img{
+    width: 3em;
+}
+
+.images-box img{
+    width: 150px;
+}
