@@ -1,10 +1,22 @@
+body{
+    margin: 0em;
+    background-color: #ffffff;
+
+}
+
 header{
+    background-image: url(images/header-background.jpg);
+    background-size: cover;
+    background-position: center; 
+}
+
+
+.over-head{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
-    background-image: url(images/random10.jpg);
+    background-image: linear-gradient(135deg, #ff330081 5%, #2929297a 50%); 
 }
 
 .social-media{
@@ -21,7 +33,7 @@ header{
     margin: 0em 0.3em;
     width: 1.5em;
     height: 1.5em;
-    background-color: rgb(0, 136, 255);
+    background-color: #dbdbdb;
     border-radius: 1em;
 }
 
@@ -34,24 +46,197 @@ nav{
     display: flex;
     justify-content: space-between;
     width: 70%;
+    background-color: aliceblue;
 }
 
-nav .menue{
-    display: flex;
-    list-style-type: none;
-    justify-content: space-between;
-    padding: 0em;
-    width: 60%;
-}
 
+/* Nave Logo and Name */
 nav .logo-name{
     display: flex;
+    color: #ee5341;
 }
 
 nav .logo-name img{
     width: 3em;
 }
+nav .logo-name p{
+    margin-left: 1em;
+}
+
+/* Nav menu */
+nav .menue{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    /* align-items: center; */
+    padding: 0em;
+    width: 50%;
+    margin-right: 1em;
+
+}
+
+nav .menue a:link{
+    padding-top: 1em;
+    color: #444444;
+    text-decoration: none;
+    transition: border-top 0.2s;
+    }
+
+
+nav .menue a:hover{
+    color: #ee5341;
+    border-top: 2px solid #ee5341;
+}
+
+nav .menue a:active{
+    color: #444444;
+}
+
+nav .menue a:visited{
+    color: #444444;
+}
+
+/* Header font */
+
+.over-head .head-line{
+    margin-top: 5em;
+    color: #ffffff;
+    font-size: 27px;
+    padding-bottom: 0.3em;
+    border-bottom: 2px solid white;
+
+}
+.over-head .tag-line{
+    margin-top: 0em;
+    margin-bottom: 1em;
+    color: #ffffff;
+}
+
+/* header button */
+.over-head .header-buto{
+    margin-bottom: 4em;
+    padding: 1em;
+    color: #ffffff;
+    background-color: #ee5341;
+    border-radius: 5px;
+  border-style: none;
+  transition: background-color 0.2s;
+
+}
+
+.over-head .header-buto:hover{
+    background-color: #f75c4b; 
+}
+
+.over-head .header-buto:active{
+    background-color: #cc2f1e; 
+}
+
+
+/* small button */
+.small-button{
+    display: flex;
+    justify-content: center;
+    
+    
+}
+.small-button div{
+    width: 0.5em;
+    height: 0.5em;
+    background-color: #444444;
+    margin: 0.3em 0.4em;
+    border-radius: 2em;
+}
+
+
+
+
+.icons-server-area{
+    width: 100%;
+    flex-wrap: wrap;
+
+}
+
+
+/* serves section */
+.services{
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.services h3{
+    border-bottom: 2px solid ;
+    font-size: 27px;
+    margin-bottom: 0em;
+
+}
+.services .icons-server{
+    margin-top: 0.5em;
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.icons-server div{
+    display: flex;
+
+    width: 12em;
+    height: 12em;
+    margin: 1em;
+    align-items: center;
+    justify-content: center;
+}
+
+.icons-server #bus-icon{
+    background-color: #1bbc9b;
+    margin-top: 0.5em;
+}
+.icons-server #file-icon{
+    background-color: #e67f22;
+    margin-top: 0.5em;
+}
+.icons-server #window-icon{
+    background-color: #3598db;
+    margin-top: 0.5em;
+}
+.icons-server #mac-icon{
+    background-color: #2dcc72;
+    margin-top: 0.5em;
+}
+
+
+/* serves section */
+.protfolio{
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.protfolio h3{
+    border-bottom: 2px solid ;
+    font-size: 27px;
+    margin-bottom: 0em;
+
+}
+.protfolio .images-box{
+    margin-top: 0.5em;
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
 .images-box img{
-    width: 150px;
+    width: 12em;
+    height: 12em;
+    object-fit: cover;
+    margin: 1em;
 }
